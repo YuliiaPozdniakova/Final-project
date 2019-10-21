@@ -7967,7 +7967,8 @@ footer {
   border-radius: 3px;
   background: #1ea78d;
   position: relative;
-  color: #fff; }
+  color: #fff;
+  padding: 0 45px 0 10px; }
 
 .input-block .arrow {
   display: inline-block;
