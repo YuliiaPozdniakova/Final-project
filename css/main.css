@@ -7135,7 +7135,6 @@ a.text-brown:hover, a.text-brown:focus {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
   width: 100%; }
   .header nav {
     background: rgba(16, 22, 54, 0.3);
@@ -7176,9 +7175,7 @@ a.text-brown:hover, a.text-brown:focus {
   width: 363px; }
 
 .wrapper {
-  position: relative;
-  height: 100vh;
-  min-height: 285px; }
+  position: relative; }
 
 .gallery {
   position: absolute;
@@ -7206,6 +7203,9 @@ a.text-brown:hover, a.text-brown:focus {
     @media (min-width: 871px) and (max-width: 1055px) {
       .gallery .we {
         margin-bottom: 15px; } }
+    @media (max-width: 767.98px) {
+      .gallery .we {
+        font-size: 12px; } }
     .gallery .we:before {
       content: '';
       width: 28px;
@@ -7251,20 +7251,42 @@ a.text-brown:hover, a.text-brown:focus {
       width: 20px;
       height: 20px; }
 
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
+  .gallery {
+    top: 50%; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .gallery h1,
-  .gallery p {
+  .gallery p,
+  .gallery span {
     font-size: 40px; }
   .we {
     margin-bottom: 10px; } }
 
 @media (max-width: 991.98px) {
+  .navbar-custom {
+    padding-right: 2rem; }
   .logo-wrapper {
-    opacity: 0; } }
+    font-size: 15px; }
+  .navbar-nav {
+    margin-top: 307px; }
+  .menu {
+    text-align: right;
+    padding-right: 20px !important;
+    background: rgba(30, 167, 141, 0.5);
+    color: #000 !important; }
+  .gallery {
+    vertical-align: middle; }
+    .gallery h1,
+    .gallery p,
+    .gallery span {
+      font-size: 20px; }
+    .gallery .we {
+      margin-bottom: 10px; } }
 
-@media (max-width: 530px) {
-  .logo-wrapper {
-    display: none; } }
+@media (max-width: 767.98px) {
+  .navbar-custom {
+    padding-left: 2rem; } }
 
 .wrapper {
   position: relative; }
@@ -7273,9 +7295,10 @@ a.text-brown:hover, a.text-brown:focus {
     flex-direction: column;
     position: absolute;
     top: 10%;
-    left: 81%; }
+    left: 78%; }
     .wrapper .carousel-indicators li {
-      border-radius: 50%; }
+      border-radius: 50%;
+      display: inline-block; }
 
 .features-section {
   background: #f4f7f9;
@@ -7404,53 +7427,29 @@ a.text-brown:hover, a.text-brown:focus {
 .web-gallery,
 .logo-gallery,
 .photography-gallery {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  margin: auto; }
-  @media (min-width: 1600px) {
-    .all-gallery,
-    .brand-gallery,
-    .web-gallery,
-    .logo-gallery,
-    .photography-gallery {
-      width: 1600px; } }
-  @media (min-width: 1220px) and (max-width: 1599px) {
-    .all-gallery,
-    .brand-gallery,
-    .web-gallery,
-    .logo-gallery,
-    .photography-gallery {
-      width: 1200px; } }
-  @media (min-width: 818px) and (max-width: 1219px) {
-    .all-gallery,
-    .brand-gallery,
-    .web-gallery,
-    .logo-gallery,
-    .photography-gallery {
-      width: 800px; } }
-  @media (min-width: 400px) and (max-width: 817px) {
-    .all-gallery,
-    .brand-gallery,
-    .web-gallery,
-    .logo-gallery,
-    .photography-gallery {
-      width: 400px; } }
+  margin: 0 auto; }
   .all-gallery li,
   .brand-gallery li,
   .web-gallery li,
   .logo-gallery li,
   .photography-gallery li {
-    display: block;
+    display: inline-block;
     position: relative;
-    width: 400px;
-    height: 300px; }
+    padding: 0; }
     .all-gallery li:hover div,
     .brand-gallery li:hover div,
     .web-gallery li:hover div,
     .logo-gallery li:hover div,
     .photography-gallery li:hover div {
       display: block; }
+    @media (max-width: 575.98px) {
+      .all-gallery li,
+      .brand-gallery li,
+      .web-gallery li,
+      .logo-gallery li,
+      .photography-gallery li {
+        margin: auto; } }
     .all-gallery li div,
     .brand-gallery li div,
     .web-gallery li div,
@@ -7492,29 +7491,50 @@ a.text-brown:hover, a.text-brown:focus {
       .photography-gallery li div span {
         font-size: 14px; }
 
+.tab-pane,
+.tab-content {
+  margin: 0 auto;
+  padding: 0; }
+
 .photo-1 {
-  background: url(../../images/img-1.jpg) no-repeat; }
+  background: url(../../images/img-1.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-2 {
-  background: url(../../images/img-2.jpg) no-repeat; }
+  background: url(../../images/img-2.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-3 {
-  background: url(../../images/img-3.jpg) no-repeat; }
+  background: url(../../images/img-3.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-4 {
-  background: url(../../images/img-4.jpg) no-repeat; }
+  background: url(../../images/img-4.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-5 {
-  background: url(../../images/img-5.jpg) no-repeat; }
+  background: url(../../images/img-5.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-6 {
-  background: url(../../images/img-6.jpg) no-repeat; }
+  background: url(../../images/img-6.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-7 {
-  background: url(../../images/img-7.jpg) no-repeat; }
+  background: url(../../images/img-7.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .photo-8 {
-  background: url(../../images/img-8.jpg) no-repeat; }
+  background: url(../../images/img-8.jpg) no-repeat;
+  height: 300px;
+  width: 400px; }
 
 .team-section {
   width: auto;
@@ -7560,26 +7580,11 @@ a.text-brown:hover, a.text-brown:focus {
     padding-bottom: 107px; }
 
 .team-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1175px;
-  margin: auto;
-  padding-bottom: 200px;
-  flex-wrap: wrap; }
-  @media (max-width: 1200px) {
-    .team-container {
-      width: 600px;
-      padding-bottom: 30px; }
-      .team-container .personal {
-        margin-bottom: 30px; } }
-  @media (max-width: 635px) {
-    .team-container {
-      width: 300px; } }
-
-.image-block {
-  position: relative; }
-  .image-block:hover .card-hover {
-    display: block; }
+  padding-bottom: 170px; }
+  .team-container .image-block {
+    position: relative; }
+    .team-container .image-block:hover .card-hover {
+      display: block; }
 
 .card-hover {
   position: absolute;
@@ -7593,9 +7598,51 @@ a.text-brown:hover, a.text-brown:focus {
     display: block;
     margin-bottom: 16px; }
 
+@media (max-width: 1199.98px) {
+  .card-hover {
+    padding: 10px 5px; }
+  .card-hover-title {
+    margin-bottom: 10px;
+    font-size: 14px; }
+  .card-hover-text {
+    font-size: 13px; }
+  div.social-icon-wrapper {
+    margin-top: 25px; } }
+
+@media (max-width: 991.98px) {
+  .card-hover {
+    padding: 25px 20px 20px; }
+  .card-hover-title {
+    margin-bottom: 20px;
+    font-size: 20px; }
+  .card-hover-text {
+    font-size: 18px;
+    word-spacing: 4px;
+    letter-spacing: 1px; }
+  div.social-icon-wrapper {
+    margin-top: 80px; } }
+
+@media (max-width: 767.98px) {
+  .card-hover {
+    padding: 45px 35px; }
+  .card-hover-title {
+    margin-bottom: 20px;
+    font-size: 40px; }
+  .card-hover-text {
+    font-size: 27px; } }
+
+@media (max-width: 575.98px) {
+  .card-hover {
+    padding: 35px 25px; }
+  .card-hover-title {
+    margin-bottom: 15px;
+    font-size: 30px; }
+  .card-hover-text {
+    font-size: 22px; }
+  div.social-icon-wrapper {
+    margin-top: 50px; } }
+
 .personal {
-  width: 272px;
-  height: 395px;
   border: none;
   border-radius: none; }
   .personal:hover .card-title {
@@ -7676,15 +7723,14 @@ a.text-brown:hover, a.text-brown:focus {
   background-size: cover;
   height: 100vh;
   position: relative; }
-  @media (max-width: 767px) {
+  @media (max-width: 767.98px) {
     .facts-section {
-      background: url(../../images/facts-bg.png) repeat;
-      height: 900px; }
+      /*background: url(../../images/facts-bg.png) repeat;
+		height: 900px;*/ }
       .facts-section .facts-col {
-        margin-bottom: 50px; } }
+        margin-bottom: 30px; } }
   @media (max-width: 575px) {
     .facts-section {
-      background: url(../../images/facts-bg.png) repeat;
       height: 1550px; } }
   .facts-section .facts-head {
     margin-bottom: 35px;
@@ -7735,6 +7781,10 @@ a.text-brown:hover, a.text-brown:focus {
     border-radius: 50%;
     position: relative;
     margin: auto; }
+    @media (max-width: 767.98px) {
+      .facts-block .circle {
+        width: 90px;
+        height: 90px; } }
     .facts-block .circle span {
       display: block;
       position: absolute;
@@ -7748,6 +7798,10 @@ a.text-brown:hover, a.text-brown:focus {
     font-size: 60px;
     font-weight: 600;
     margin-top: 30px; }
+    @media (max-width: 767.98px) {
+      .facts-block .numeral {
+        font-size: 30px;
+        margin-top: 15px; } }
   .facts-block p {
     font-size: 18px;
     font-weight: 300; }
@@ -7831,7 +7885,7 @@ a.text-brown:hover, a.text-brown:focus {
     border: 0;
     border-bottom: 1px solid #ccc;
     resize: none;
-    padding-bottom: 10px; }
+    padding: 5px 10px 10px 10px; }
   .all-form .form-row {
     margin-bottom: 40px;
     border: none;
@@ -7843,10 +7897,14 @@ a.text-brown:hover, a.text-brown:focus {
     padding-right: 0;
     font-size: 16px; }
     .all-form button:hover {
-      background: #fff; }
+      background: none; }
+    .all-form button:active {
+      background: #fff !important;
+      border: 0 !important; }
     @media (max-width: 991px) {
       .all-form button {
-        width: 150px; } }
+        width: 120px;
+        padding-left: 0; } }
   .all-form .button-icon {
     display: inline-block;
     background: url("../../images/all-icons.png") no-repeat -212px -47px;
@@ -7871,6 +7929,10 @@ a.text-brown:hover, a.text-brown:focus {
 
 textarea {
   height: 40px; }
+
+@media (max-width: 991.98px) {
+  address {
+    max-width: 180px; } }
 
 ::placeholder {
   color: #5b646e;
